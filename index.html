@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>API E-commerce di Salvo</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">API E-commerce di Salvo </h1>
+
+        <!-- Aggiungi il form in alto -->
+        <form id="addProductForm" class="mb-4">
+            <div class="form-group">
+                <label for="productName">Nome Prodotto</label>
+                <input type="text" class="form-control" id="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Descrizione Prodotto</label>
+                <textarea class="form-control" id="productDescription" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productImageURL">URL Immagine Prodotto</label>
+                <input type="text" class="form-control" id="productImageURL" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Aggiungi Prodotto</button>
+        </form>
+
+        <!-- Mostra la lista dei prodotti sotto il form -->
+        <div id="product-list"  class="product-container"></div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
+
+
+
